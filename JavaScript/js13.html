@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang=
+>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+<title> Javascript Date and time </title>
+ 
+
+</head>
+<body>
+
+  <script>
+  console.log("This is Date and time tutorial");
+  let now =new Date();
+  console.log(now);
+
+  let dt =new Date(1000);
+  console.log(dt);
+
+// let newDate = new Date("2029-06-30");
+// console.log(newDate);
+
+// let newDate = new Date("2029-06-30");
+// console.log(newDate);
+
+//let newDate = new Date(year,month,day,hours,minute,second); 
+let newDate = new Date(2021,3,6,9,3,2);
+console.log(newDate);
+
+let yr=newDate.getFullYear();
+console.log("the year is ",yr);
+
+let det=newDate.getDate();
+console.log("the date is ",det);
+
+let mt=newDate.getMonth();
+console.log("the month is ",mt);
+
+let hr=newDate.getHours();
+console.log("the hour is ",hr);
+
+// newDate.setDate(9);
+// console.log(newDate);
+
+// autocorrection
+newDate.setDate(34);
+// newDate.setMinutes(34);
+// newDate.setMonth(34);
+// newDate.setFullYear(34);
+console.log(newDate);
+
+</script>
+
+</body>
+</html>

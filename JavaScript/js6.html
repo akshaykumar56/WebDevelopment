@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang=
+>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+<title> Arrays and object </title>
+ 
+
+</head>
+<body>
+
+  <script>
+    //  primitive
+    let myvar1=34;
+    let myvar2= "string";
+    let myvar3= null;
+    let myvar4= undefined;
+    let myvar5= true;
+    
+    // object -- any datatype that is not primitive is object
+    let employee ={
+        name:"harry",
+        salary:10,
+        channel: "codewithharry",
+        "channel 2":"programwithharry",
+    }
+    // console.log(employee)
+    // console.log(employee.channel);
+
+
+// array--special kind of object
+
+// let names =[1,2,4,"harry",undefined];
+let names =new Array(1,2,4,"harry",undefined);
+// let names=new Array(23);
+console.log(names);
+names=names.sort();
+names.push("this is pushed");
+console.log(names);
+ console.log(names.length);
+
+</script>
+
+</body>
+</html>

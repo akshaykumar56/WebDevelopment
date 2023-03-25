@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang=
+>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+<title>SetTimeOut and Settimeinterval</title>
+ <style>
+     .container{
+         border: 2px solid red;
+         background-color: blanchedalmond;
+         padding:40px 12px;
+         display:flex;
+         align-items: center;
+         justify-content: center;
+         font-weight: bolder;
+         font-size: larger;
+
+     }
+ </style>
+
+</head>
+<body>
+<div class="container">
+    Time now is <span id="time"></span>
+
+</div>
+  <script>
+ // console.log("This is js12");
+
+//  SetTimeout -->Allows us to run the function once after the interval of Time
+//  Setinterval -->Allows us to run the function repeatedly after the interval of time
+
+ function greet(name ,bytext)
+ {
+    console.log("hello Good Morning" + name + " " + bytext);
+}
+setTimeout(greet(), 5000);//-->this is wrong, we cannot call function in it
+ setTimeout(greet, 5000, "take care"," akshay");
+
+timeOut= setTimeout(greet, 5000, " harry", "take care")
+console.log(timeOut);
+
+// clearTimeout(timeOut);
+
+// intervalId=setInterval(greet, 1000, " harry", "take care");
+// clearInterval(intervalId);
+
+function displayTime()
+{
+time= new Date();
+ console.log(time);
+ document.getElementById('time').innerHTML=time;
+}
+
+setInterval(displayTime,1000);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+content{
+  background-color: red;
+}
+.class{
+
+    margin:30px 200px;
+    padding:0px 0px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.classh1{
+    color: red;
+    font-size: 40px;
+    margin: 14px 0px;
+}
+.boxclass{
+    margin: 37px 0px;
+    padding: 0px 0px;
+    width: 48%;
+    height:200px;
+    box-shadow: 6px 6px blueviolet;
+
+}
+.boxclass:nth-child(2) {
+  background:center/cover no-repeat url("/static/serimg/1.jpg");
+}
+
+.boxclass:nth-child(3) {
+  background:center/cover no-repeat url("/static/serimg/2.jpg");
+}
+
+.boxclass:nth-child(4) {
+  background:center/cover no-repeat url("/static/serimg/3.jpg");
+}
+
+
+.boxclass:nth-child(5) {
+  background:center/cover no-repeat url("/static/serimg/4.jpg");
+}
+
+
+.boxclass:nth-child(6) {
+  background:center/cover no-repeat url("/static/serimg/5.jpg");
+}
+
+
+.boxclass:nth-child(7) {
+  background:center/cover no-repeat url("/static/serimg/6.jpg");
+}
+
+
+.boxclass:nth-child(8) {
+  background:center/cover no-repeat url("/static/serimg/7.jpg");
+}
+
+
+.boxclass:nth-child(9) {
+  background:center/cover no-repeat url("/static/serimg/8.jpg");
+}
+
+.boxclass:nth-child(10) {
+  background:center/cover no-repeat url("/static/serimg/9.jpg");
+}
+
+.boxclass:nth-child(11) {
+  background:center/cover no-repeat url("/static/serimg/10.jpg");
+}
+
+.boxclass:nth-child(12) {
+  background:center/cover no-repeat url("/static/serimg/11.jpg");
+}
+
+.boxclass:nth-child(13) {
+  background:center/cover no-repeat url("/static/serimg/12.jpg");
+}
+
+
+.boxclass:hover
+{
+  transform: scale(1.15);
+}
+.boxclass h1{
+  color:white;
+}
+.boxclass h2{
+color:white;
+}
+.innerinfo 
+{
+  padding-left: 190px;
+}
+
+.inner{
+padding-left: 50px;
+}
+
+.more {display: none;}
+
+.img {
+  height: 131px;
+  padding: 7px 150px;
+  margin: 15px 9px;
+  width:100px;
+}
+
+.img img{
+  height: inherit;
+}
+

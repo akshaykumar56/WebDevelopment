@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+            CSS selectors
+        </title>
+        
+    </head>
+    <body>
+       <div class="container">
+           This is a container
+       </div>
+
+       <script>
+           let jsonObj={
+               name:"Harry",
+               channel:"CWH",
+               friend:"rohandas",
+               food:"bhindi"
+           }
+
+           console.log(jsonObj);
+           let myJsonStr =JSON.stringify(jsonObj);
+
+          myJsonStr= myJsonStr.replace('Harry','Larry');
+          console.log(myJsonStr);
+
+          newJsonStr=JSON.parse(myJsonStr);
+          console.log(newJsonStr)
+       </script>
+    </body>
+</html>

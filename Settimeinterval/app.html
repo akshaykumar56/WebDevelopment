@@ -1,0 +1,42 @@
+<!-- setTimeout(expression, timeout); runs the code/function once after the timeout. -->
+
+<!-- setInterval(expression, timeout); runs the code/function repeatedly, with the length of the timeout between each repeat. -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setinterval</title>
+</head>
+<body>
+    <h1>setInterval, clearTimeout and setTimeout</h1>
+    <p id="para"></p>
+  <button onclick="clearTimeout">Stop It!</button>
+  <h2 id="demo"></h2>
+
+<script>
+//     const myTimeout = setTimeout(myGreeting, 5000);
+
+// function myGreeting() {
+//   document.getElementById("demo").innerHTML = "Happy Birthday!"
+// }
+
+// function clearTimeout() {
+//   clearTimeout(myTimeout);
+// }
+
+setInterval(displayHello, 1000);
+
+function displayHello() {
+  document.getElementById("demo").innerHTML += "Hello";
+}
+      
+  </script>
+</body>
+</html>

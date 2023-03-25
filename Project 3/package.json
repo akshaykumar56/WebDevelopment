@@ -1,0 +1,23 @@
+{
+  "name": "dance-website",
+  "version": "1.0.0",
+  "description": "this is a website for a popular dance academy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "akshay",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.2",
+    "nodemon": "^2.0.20",
+    "npx": "^10.2.2",
+    "pug": "^3.0.2",
+    "web": "^0.0.2",
+    "webidl2js": "^17.1.0",
+    "wrapper": "^0.1.0"
+  }
+}

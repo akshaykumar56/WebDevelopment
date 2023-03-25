@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device.width ,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+           Akshay Fitness
+        </title>
+      
+        </head>
+        
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+          body{
+            font-family: 'Rubik Mono One', sans-serif;
+              margin:0px;
+              padding:0px;
+              background: url('img/bg.jpg');
+              background-size:cover;
+              
+          }
+
+         header
+          {
+            position:sticky;
+            height:90px;
+
+          } 
+
+          .left
+          {
+              display:inline-block;
+               height:90px;
+               position: absolute;
+               left:34px;
+               top:0px;
+           }
+         
+           .left img
+          {
+              height:100px;
+              width:100px;
+          }
+
+
+          .mid
+          {
+            /* display:inline-block; */
+            display:block;
+            width:40%;
+            margin:20px auto;
+          }
+
+          .right
+            {
+              position:absolute;
+              right:42px;
+              top:14px;
+              display:inline-block;
+            
+            }
+
+          .navbar
+             {
+              display: inline-block;
+             }
+
+          .navbar li 
+            {
+              display: inline-block;
+              font-size: 20px;
+            }
+
+          .navbar li a
+            {
+              color:red;
+              display: inline-block;
+              text-decoration: none;
+              padding:14px 13px;
+            }
+          
+          .navbar li a:hover,.navbar li a:active
+          {
+             text-decoration: underline;
+             color:grey;
+          }
+
+          .btn{
+              margin:11px 9px;
+              background-color: black;
+              color:white;
+              padding:8px 4px;
+              border:2px solid grey;
+              border-radius:10px;
+          }
+
+          .btn:hover{
+             background-color:silver;
+          }
+          .container {
+            border: 3px solid white;
+           margin: 174px 465px;
+           width: 33%;
+           padding: 66px 70px;
+           border-radius: 14px;
+           text-align: center;
+     }
+
+       .formgrp input 
+       {
+        text-align: center;
+        border-radius:15px ;
+        display: block;
+        width: 315px;
+        padding: 8px;
+        border: 2px solid red;
+        margin: 5px auto;
+        
+       }
+
+        .formgrp input:hover 
+        {
+         background-color:gold;
+
+        }
+        
+        
+        .ntn 
+          {
+            border-radius:15px ;
+          padding: 4px 18px;
+          margin: 26px 230px;
+          }
+
+          .ntn:hover
+          {
+            background-color: red;
+            text-decoration: underline;
+          }
+
+          .text{
+              color:red;
+          }
+       
+          label {
+                    display: inline-block;
+                  }
+                  
+        @media screen and (max-width: 768px) {
+          label 
+          {
+             display: block;
+                }
+              }
+         
+
+    </style>
+
+    <body>
+        <header class="header">
+            
+            <!-- left box for logo -->
+            <div class="left">
+           <img src="img/logo.png" alt="">
+           <div>Akshay's Gym </div>
+            </div>
+
+            <!-- mid box for navigation bar -->
+            <div class="mid">
+                <ul class="navbar">
+                    <li><a href'#'>Home</a></li>
+                    <li><a href'#'>About Us</a></li>
+                    <li><a href'#'>Fitness Centre</a> </li>
+                    <li><a href'#'>Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <!-- right box for buttons -->
+            <div class="right">
+           <button class="btn">Call Us Now</button>
+           <button class="btn">Email Us</button>
+            </div>
+
+        </header>
+       
+        <div class="container">
+            <h1 class="text">Join the best gym of Delhi now</h1>
+            
+            <form action="noaction.php">
+                
+                <div class="formgrp">
+                <input type="text" name="" placeholder="Enter Your Name">
+                </div>
+
+                <div class="formgrp">
+                <input type="text" name="" placeholder="Enter Your Age">
+                </div>
+
+               <div class="formgrp">
+                <input type="text" name="" placeholder="Enter Your Locality">
+                </div>
+                 
+                <div class="formgrp">
+                <input type="text" name="" placeholder="Enter Your Number">
+                </div>
+
+                <div class="formgrp">
+               <input type="text" name="" placeholder="Enter Your Email">
+                </div>
+                 
+               
+                  <label for="radio_1">
+                    <input type="radio" name="radio" value="Male">
+                   Male
+                  </label>
+                  <label for="radio_2">
+                    <input type="radio" name="radio" value="Female">
+                  Female
+                  </label>
+                  <label for="radio_3">
+                    <input type="radio" name="radio" value="Other">
+                    Other
+                  </label>
+
+                  
+                <button class="ntn"> Submit  </button>
+                
+                   
+            </form>
+        
+        </div>
+    </body>
+</html>

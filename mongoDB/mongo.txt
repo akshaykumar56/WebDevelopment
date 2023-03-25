@@ -1,0 +1,59 @@
+1. View all DataBases
+show DataBases
+
+2. Create a new or switch DataBases
+use DBname // create a new database or switch to a existing databases
+
+3.View Current DataBase
+db
+
+4.delete a database
+db.dropDatabase()
+
+// commands for collections(table)
+
+show collections
+
+db.createCollection('comments'-->create a collection of name "comments"
+
+db.comments.drop() - > Delete a collection named "comments" from Current Database
+
+
+// commands for documents(row)
+//Insert one row
+db.comments.insert({'name':'Harry','lang':'JavaScript','spec':'Java'})
+
+//Insert multiple row
+db.comments.insertMany([{
+    'name':'Harry',
+     'lang':'JavaScript'
+},
+{
+    'name':'Harry1',
+     'lang':'JavaScript1'
+},
+{
+    'name':'Harry2',
+     'lang':'JavaScript2'
+}])
+
+// show all documents in collection
+db.comments.find()
+
+
+// Search in a mongoDB Database
+db.comments.find(lang:"JavaScript")
+
+db.comments.findOne(lang:"JavaScript")
+
+// limit the rows in output
+db.comments.find().limit(2)
+
+//count number of rows
+db.comments.find().count()
+
+// sort database
+db.comments.find().sort({member_since:1})
+
+// update
+db.comments.update({name:"Harry"},{'name':'Akshay','lang':'Nodejs'},{upsert:true}) // upsert -->if not match create new row

@@ -1,0 +1,91 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+    style 
+       include ../static/style.css
+       include ../static/services.css
+
+block content
+    div.service 
+        h1 Our Services 
+        h1 Dance The Way You Like
+        div#inner1
+            div.outer1
+                img(src="/static/serimg/1.jpg")
+                p Hip Hop
+            div.outer1
+                img(src="/static/serimg/2.jpg")
+                p Contemporary
+            div.outer1
+                img(src="/static/serimg/3.jpg")
+                p Dance WorkOut
+            div.outer1 
+                img(src="/static/serimg/4.jpg")
+                p K-pop
+        div#inner2 
+            div.outer2 
+                img(src="/static/serimg/5.jpg")
+                p Ballet
+            div.outer2
+                img(src="/static/serimg/6.jpg")
+                p Salsa
+            div.outer2
+                img(src="/static/serimg/7.jpg")
+                p Popping
+            div.outer2
+                img(src="/static/serimg/8.jpg")
+                p Lite Feet
+        div#inner3 
+            div.outer3
+                img(src="/static/serimg/9.jpg")
+                p Jazz
+            div.outer3
+                img(src="/static/serimg/10.jpg")
+                p Heels
+            div.outer3 
+                img(src="/static/serimg/11.jpg")
+                p House
+            div.outer3
+                img(src="/static/serimg/12.jpg")
+                p Locking
+    
+    div.instructor
+        h2 Your Instructors
+        div.innerInst 
+            div.outerInst
+                img(src="/static/insimg/1.jpg")
+                h3 Gina StarBuck 
+                h5 Jazz,Hip-Hop,K-Pop 
+            div.outerInst
+                img(src="/static/insimg/2.jpg")
+                h3 Shivani Thakkar 
+                h5 Salsa,Heels
+            div.outerInst
+                img(src="/static/insimg/3.jpg")
+                h3 Lee Daniel 
+                h5 Jazz,Hip-Hop
+            div.outerInst
+                img(src="/static/insimg/4.jpg")
+                h3 Aaron Czuprenski 
+                h5 Contemporary,Jazz
+
+        div.innerInst 
+            div.outerInst
+                img(src="/static/insimg/5.jpg")
+                h3 Joelle Martinec
+                h5 Ballet,Lite-Feet
+            div.outerInst
+                img(src="/static/insimg/6.jpg")
+                h3 Dr David Odom
+                h5 Health and Fitness
+            div.outerInst
+                img(src="/static/insimg/7.jpg")
+                h3 Corina Kinnear
+                h5 Ballet
+            div.outerInst
+                img(src="/static/insimg/8.jpg")
+                h3 Nollan Palida
+                h5 House
